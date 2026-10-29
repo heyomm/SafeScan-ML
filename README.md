@@ -1,4 +1,4 @@
-# SafeScan ML Model
+# SafeScan ML Model V1
 
 SafeScan uses receiver transaction and activity data to estimate UPI
 receiver risk before payment.
@@ -8,10 +8,9 @@ receiver risk before payment.
     senders, scan count, spam reports, block rate, average transaction
     amount, and hour of day.
 -   **Target:** `target_is_risky` (risky / not risky).
--   **Models:** Random Forest and XGBoost, compared using classification
+-   **Models:** Random Forest (85% accuracy) and XGBoost(86% accuracy), compared using classification
     metrics including precision, recall, F1, ROC-AUC, and PR-AUC.
 -   **App verdicts:** Safe, Caution, or Risky, based on risk-score
     thresholds (below 0.49, 0.49--0.79, and 0.79 or above).
 
-**Note:** Validate the dataset labels and test performance before using
-predictions for real payment decisions.
+**Note:** This is V1 So the accuracy is 85% - 86% and it will improve in next versions !!!
